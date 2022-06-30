@@ -1,0 +1,128 @@
+
+
+#calc {
+    width: 30%;
+    height: 500px;
+    margin: 250px auto;
+    background-color: #111;
+    color: #fff;
+    font-family: sans-serif;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+#calc .action {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px;
+}
+
+.operators {
+    align-self: center;
+    font-weight: 900;
+    font-size: 1.3rem
+}
+
+.op-col {
+    border: 1px solid #fff;
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1.3rem;
+    border-radius: 5px;;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    align-self: flex-start;
+    font-size: 1.2rem;
+}
+
+#display-answer {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.clear-btn {
+    margin-top: 30px;
+    position: relative;
+    left: 70%;
+    width: 100px;
+    height: 30px;
+    visibility: hidden;
+}
+
+#calc-button {
+    background-color: #1f72c0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+#calc-button:hover {
+    background-color: #4681b8;
+}
+
+@media screen and (max-width: 54.50em) {
+    .operators {
+        font-weight: 700;
+        font-size: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    /* .op-col:last-child {
+        margin-bottom: 0;
+    } */
+
+    input[type="text"], input[type="submit"] {
+        padding: 8px;
+        font-size: 1rem;
+    }
+    
+}
+
+@media screen and (max-width: 53rem) {
+    .operators {
+        align-items: baseline;
+    }
+
+    .op-col {
+        margin-bottom: 10px;
+    }
+    .op-col:last-child {
+        margin-bottom: 0;
+    }
+
+    #calc {
+        height: 500px;
+        }
+
+    #calc h2 {
+        font-size: 120%;    /*16px -> 100%*/
+    }
+
+    .clear-btn {
+        left: 55%;
+        width: 90px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 39.06rem) {
+    .op-col:nth-child(3) {
+        margin-bottom: 0;
+    }
+
+    input[type="text"] {
+        padding: 8px;
+        font-size: .8rem;
+    }
+
+}
